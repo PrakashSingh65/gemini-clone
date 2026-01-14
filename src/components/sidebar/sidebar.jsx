@@ -14,12 +14,25 @@ const sidebar = () => {
             <div className="recent">
                 <p className="recent-title">Recent</p>
                 <div className="recent-entry">
-                    
+                    <img src ={assets.message_icon} alt=" "/>
+                    <p>what is react...</p>
                 </div>
             </div>
 
         </div>
       <div className="bottom">
+        <div className="bottom-ite recent-entry">
+            <img src={assets.question_icon} alt="" />
+            <p>Help</p>
+        </div>
+        <div className="bottom-ite recent-entry">
+            <img src={assets.history_icon} alt="" />
+            <p>Activity</p>
+        </div>
+        <div className="bottom-ite recent-entry">
+            <img src={assets.setting_icon} alt="" />
+            <p>Settings</p>
+        </div>
 
       </div>
     </div>
