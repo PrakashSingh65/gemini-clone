@@ -3,14 +3,19 @@ import './sidebar.css'
 import {assets} from '../../assets/assets'
 
 const sidebar = () => {
+
+    const [extended,setExtended] = useState(false)
   return (
     <div className='sidebar'>
         <div className="top">
+            <img onClick={()=>setExtendede(prev=>!prev)} className="logo" src={assets.logo_icon} alt="Logo" />
             <img className="manu" src={assets.menu_icon} alt="Menu Icon" />
             <div className="new-chat">
                 <img src={assets.plus_icon} alt="Plus Icon" />
-                <p>New Chat</p>
+                {extended?<p>New Chat</p> : null}
             </div>
+            {extended
+            <div className="recent">
             <div className="recent">
                 <p className="recent-title">Recent</p>
                 <div className="recent-entry">
@@ -18,25 +23,26 @@ const sidebar = () => {
                     <p>what is react...</p>
                 </div>
             </div>
+            :null
 
         </div>
       <div className="bottom">
         <div className="bottom-ite recent-entry">
             <img src={assets.question_icon} alt="" />
-            <p>Help</p>
+            {extended?<p>Help</p>:null}
         </div>
         <div className="bottom-ite recent-entry">
             <img src={assets.history_icon} alt="" />
-            <p>Activity</p>
+            {extended?<p>Activity</p>:null}
         </div>
         <div className="bottom-ite recent-entry">
             <img src={assets.setting_icon} alt="" />
-            <p>Settings</p>
+            {extended?<p>Settings</p>:null}
         </div>
 
       </div>
     </div>
-  )
+    
 }
 
 export default sidebar
