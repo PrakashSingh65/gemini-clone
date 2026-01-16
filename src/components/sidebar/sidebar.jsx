@@ -33,7 +33,7 @@ const Sidebar = () => {
       </div>
 
       {/* BOTTOM SECTION */}
-      // ...existing code...
+      
       {/* BOTTOM SECTION */}
       <div className="bottom">
         <div className="bottom-item recent-entry" data-tooltip="Help">
@@ -51,7 +51,6 @@ const Sidebar = () => {
           {extended && <p>Settings</p>}
         </div>
       </div>
-// ...existing code...
     </div>
   );
 };
