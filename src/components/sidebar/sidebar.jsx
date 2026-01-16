@@ -33,22 +33,25 @@ const Sidebar = () => {
       </div>
 
       {/* BOTTOM SECTION */}
+      // ...existing code...
+      {/* BOTTOM SECTION */}
       <div className="bottom">
-        <div className="bottom-item recent-entry">
+        <div className="bottom-item recent-entry" data-tooltip="Help">
           <img src={assets.question_icon} alt="Help" />
           {extended && <p>Help</p>}
         </div>
 
-        <div className="bottom-item recent-entry">
+        <div className="bottom-item recent-entry" data-tooltip="Activity">
           <img src={assets.history_icon} alt="Activity" />
           {extended && <p>Activity</p>}
         </div>
 
-        <div className="bottom-item recent-entry">
+        <div className="bottom-item recent-entry" data-tooltip="Settings">
           <img src={assets.setting_icon} alt="Settings" />
           {extended && <p>Settings</p>}
         </div>
       </div>
+// ...existing code...
     </div>
   );
 };
