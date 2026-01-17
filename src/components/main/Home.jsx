@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+//import './main.css'
 import userIcon from '../../assets/user_icon.png' // Adjust the path based on your folder structure
 import compassIcon from '../../assets/compass_icon.png' // Adjust the path based on your folder structure 
 import bulbIcone from '../../assets/bulb_icon.png' // Adjust the path based on your folder structure
@@ -10,6 +10,7 @@ import mic_icon from '../../assets/mic_icon.png' // Adjust the path based on you
 import send_icon from '../../assets/send_icon.png' // Adjust the path based on your folder structure
 import './home.css'
 import { assets } from '../../assets/assets'
+//import './main.css'
 export const Home = () => {
   return (
     <div className='main'>
