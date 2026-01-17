@@ -1,10 +1,15 @@
 import React from 'react'
-//import './main.css'
+import './Home.css'
 import userIcon from '../../assets/user_icon.png' // Adjust the path based on your folder structure
 import compassIcon from '../../assets/compass_icon.png' // Adjust the path based on your folder structure 
 import bulbIcone from '../../assets/bulb_icon.png' // Adjust the path based on your folder structure
 import messageIcon from '../../assets/message_icon.png' // Adjust the path based on your folder structure
 import codeIcon from '../../assets/code_icon.png' // Adjust the path based on your folder structure
+import gallery_icon from '../../assets/gallery_icon.png' // Adjust the path based on your folder structure
+import mic_icon from '../../assets/mic_icon.png' // Adjust the path based on your folder structure
+import send_icon from '../../assets/send_icon.png' // Adjust the path based on your folder structure
+import './home.css'
+import { assets } from '../../assets/assets'
 export const Home = () => {
   return (
     <div className='main'>
@@ -40,9 +45,9 @@ export const Home = () => {
           <div className="search-box">
             <input type="text" placeholder='Enter a prompt here...'/>
             <div>
-              <img src={assets.gallery_icon} alt=""/>
-              <img src={assets.mic_icon} alt=""/>
-              <img src={assets.send_icon} alt=""/>
+              <img src={gallery_icon} alt="gallery" />
+              <img src={mic_icon} alt="mic" />
+              <img src={send_icon} alt="send" />
             </div>
           </div>
             <p className="bottom-info">
