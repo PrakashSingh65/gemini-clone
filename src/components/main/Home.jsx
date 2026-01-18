@@ -12,6 +12,8 @@ import './home.css'
 import { assets } from '../../assets/assets'
 //import './main.css'
 export const Home = () => {
+
+    1
   return (
     <div className='main'>
       <div className='nav'>
